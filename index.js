@@ -3,8 +3,16 @@ let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
-    navbar.classList.toggle('open')
+    navbar.classList.toggle('open');
+
+    if (!navbar.classList.contains('open')) {
+        menu.classList.remove('bx-x');
+        // Add any other reset actions you might need
+    }
 };
+
+
+
 
 const sr = ScrollReveal ({
     distance: '40px',
