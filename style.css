@@ -48,6 +48,18 @@ header{
 
 .navbar{
     display: flex;
+    transition: all ease .5s;
+}
+
+.navbar.show{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #2d2d2d;
+    z-index: 999;
 }
 
 .navbar a{
@@ -72,7 +84,7 @@ header{
     border: 1px solid #3b3b3b;
     padding: 10px 20px;
     border-radius: 100px;
-    display: flex;
+    display: none;
     align-items: center;
     cursor: pointer;
 }
@@ -307,6 +319,7 @@ section{
     .btn{
         margin-bottom: 40px;
     }
+    
 }
 
 
@@ -343,6 +356,16 @@ section{
     }
     .home-text{
         top: 64%;
+    }
+    .menu-btn{
+        background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+        box-shadow: 0px 20px 40px #00000070;
+        border: 1px solid #3b3b3b;
+        padding: 10px 20px;
+        border-radius: 100px;
+        display: block;
+        align-items: center;
+        cursor: pointer;
     }
 }
 
